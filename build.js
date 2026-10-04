@@ -86,13 +86,13 @@ const homepage = [
   '<div class="section-heading"><div><p class="eyebrow">Selected work</p><h2 id="projects-title">Engineering, backed by evidence.</h2></div><p>Project case studies, working dashboards, and the code behind the analysis.</p></div>',
   '<div class="filter-toolbar"><div class="filters" role="group" aria-label="Filter selected projects">',
   [["all", "All work"], ["semiconductor", "Semiconductor"], ["quality", "Quality"], ["operations", "Operations"], ["analytics", "Analytics"]].map(([filter, label]) => '<button class="filter" type="button" data-filter="' + filter + '" aria-pressed="' + (filter === "all") + '">' + label + "</button>").join("\n"),
-  '</div><span class="project-count" data-project-count aria-live="polite">' + featured.length + ' projects</span></div><div class="project-grid">',
+  '</div><span class="project-count" data-project-count aria-live="polite">' + featured.length + ' projects</span></div><div class="project-grid' + (featured.length === 4 ? ' project-grid-four' : '') + '">',
   featured.map((project) => [
     '<article class="project-card accent-' + e(project.accent) + '" data-project data-category="' + e(project.category) + '">',
     '<a class="project-visual" href="./projects/' + e(project.slug) + '.html" aria-label="Read ' + e(project.title) + '"><img src="./' + e(project.image) + '" alt="' + e(project.imageAlt) + '" loading="lazy" decoding="async"></a>',
     '<div class="project-body"><p class="eyebrow">' + e(project.discipline) + '</p><h3><a href="./projects/' + e(project.slug) + '.html">' + e(project.title) + "</a></h3><p>" + e(project.summary) + "</p>",
     tags(project),
-    '<div class="project-actions"><a class="text-link" href="./projects/' + e(project.slug) + '.html">Case study <span aria-hidden="true">&rarr;</span></a>' + externalLink(project.repository, "View code &nearr;") + "</div></div></article>"
+    '<div class="project-actions"><a class="text-link" href="./projects/' + e(project.slug) + '.html">Case study <span aria-hidden="true">&rarr;</span></a>' + (project.repository ? externalLink(project.repository, "View code &nearr;") : externalLink(project.demo, e(project.cardDemoLabel || "Open dashboard") + " &nearr;")) + "</div></div></article>"
   ].join("\n")).join("\n"),
   '</div><div class="pipeline"><div class="pipeline-heading"><h3>Next investigations</h3><p>Planned studies &middot; Results pending</p></div><ul class="pipeline-list">',
   planned.map((project, index) => '<li><a href="./projects/' + e(project.slug) + '.html"><span class="pipeline-number">' + String(index + 1).padStart(2, "0") + '</span><span class="pipeline-title">' + e(project.title) + '</span><span class="status">' + e(project.status) + '</span><span aria-hidden="true">&rarr;</span></a></li>').join("\n"),
@@ -134,7 +134,7 @@ for (const project of content.projects) {
     '<section aria-labelledby="next-title"><h2 id="next-title">The next engineering step</h2><p>' + e(project.next) + "</p></section>",
     '<div class="next-project"><a class="text-link" href="../index.html#projects">&larr; All projects</a><a class="text-link" href="mailto:' + e(content.email) + "?subject=" + encodeURIComponent("Discuss: " + project.title) + '">Discuss this project &rarr;</a></div></article>',
     '<aside class="case-aside" aria-labelledby="project-links-title"><h2 id="project-links-title">Project resources</h2>',
-    externalLink(project.demo, "Open live dashboard &nearr;", "button button-primary"),
+    externalLink(project.demo, e(project.demoLabel || "Open live dashboard") + " &nearr;", "button button-primary"),
     externalLink(project.repository, e(project.repositoryLabel || "View repository") + " &nearr;", "button button-outline"),
     !project.repository && !project.demo ? "<p>Research scope defined. Results and code will follow as the study develops.</p>" : "",
     '<p class="evidence"><strong>Evidence status</strong>' + e(project.evidence) + "</p><p>By " + e(content.name) + "</p></aside></div></main>",

@@ -19,7 +19,7 @@ Add your actual `resume.pdf` beside `index.html` and run the build again to enab
 ## Pages
 
 - Homepage: Home, selected work, planned studies, experience, Rutgers nanofabrication training, skills, and contact.
-- Three case studies link to existing semiconductor, SPC, and inventory projects.
+- Four case studies link to existing semiconductor, SPC, inventory, and Tableau data visualization projects.
 - Five research scopes retain the originally requested project ideas, clearly labeled as planned.
 - `404.html`, `robots.txt`, `sitemap.xml`, canonical links, social preview metadata, and profile structured data.
 
@@ -40,5 +40,7 @@ Official setup: https://docs.github.com/en/pages/getting-started-with-github-pag
 ## Project evidence
 
 Project descriptions were checked against the owner's public repositories on October 4, 2026. Screenshots come from the SPC and inventory repositories. The wafer image is an illustrative graphic, not experimental data. Synthetic data, assumed parameters, projected savings, and pending studies are explicitly distinguished from real results. The scheduling repository currently contains a project outline, so its expected performance targets are not presented as achieved outcomes.
+
+The data visualization case study is based on the published Tableau story, "Pathways to Progress: Global Socio-Economic Analysis." Its preview image comes from the rendered Tableau story. The card and case-study page link directly to the interactive visualization; no code repository is implied.
 
 Contact uses a real email link; no form pretends to submit without a mail service. The page also includes a copy-email button, keyboard navigation, a skip link, responsive layouts, reduced-motion support, and a print stylesheet.

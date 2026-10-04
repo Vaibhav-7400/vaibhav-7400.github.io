@@ -103,6 +103,34 @@
       "next": "Validate lead-time and demand assumptions, add supplier constraints, and backtest stockout performance."
     },
     {
+      "slug": "pathways-to-progress",
+      "title": "Pathways to Progress: Global Socio-Economic Analysis",
+      "category": "analytics",
+      "discipline": "Analytics / Data visualization",
+      "status": "Published Tableau story",
+      "featured": true,
+      "accent": "rust",
+      "image": "assets/pathways-to-progress.png",
+      "imageAlt": "Tableau story showing GDP trends, a world map, electricity and Internet access, and literacy rankings",
+      "caption": "Preview of the first chapter of the published Tableau story. Explore the interactive version for country and year comparisons.",
+      "summary": "An interactive Tableau story exploring economic growth, connectivity, health, education, and inequality across countries.",
+      "tools": ["Tableau", "Data visualization", "Dashboard storytelling"],
+      "demo": "https://public.tableau.com/app/profile/vaibhav.krishna.naik/viz/PathwaystoProgressGlobalSocio-EconomicAnalysisFinalProject/Story1",
+      "demoLabel": "Open Tableau story",
+      "cardDemoLabel": "View Tableau",
+      "evidence": "Published Tableau Public story with four thematic chapters and interactive country/year filters.",
+      "problem": "Economic, health, education, and living-standard indicators tell different parts of a country's development story. This project brings those dimensions into an interactive visual narrative so readers can compare patterns across countries and over time.",
+      "approach": [
+        { "title": "Compare growth and connectivity", "body": "Combine GDP-per-capita trends and a world map with electricity access and Internet usage to examine economic growth alongside infrastructure and connectivity." },
+        { "title": "Explore development dimensions", "body": "Organize health, emissions, and development into a dedicated story chapter, then examine literacy and schooling in an education-focused chapter." },
+        { "title": "Examine living standards", "body": "Use a fourth chapter to bring living standards and inequality into the global comparison." },
+        { "title": "Guide an interactive investigation", "body": "Use a four-part Tableau story, country and year filters, and top/bottom ranking controls to let readers explore the relationships rather than rely on a single static chart." }
+      ],
+      "outcome": "The published visualization combines maps, time-series views, rankings, and interactive filters in a four-chapter story. It demonstrates how Tableau dashboards can turn multiple indicators into a coherent narrative for a broad audience.",
+      "limitations": "Country selections, time periods, and aggregation affect the comparisons. The visualizations describe patterns; they do not establish causal relationships between indicators. The live workbook is the source for displayed values.",
+      "next": "Extend the story with selected-country comparisons, concise annotations, and additional documentation of indicator sources."
+    },
+    {
       "slug": "wafer-yield-optimization",
       "title": "Semiconductor Wafer Yield & Process Optimization",
       "category": "semiconductor quality analytics",

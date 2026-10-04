@@ -69,6 +69,7 @@ p { margin-bottom: 1.25rem; }
 .filter[aria-pressed="true"] { background: white; color: var(--teal); box-shadow: 0 1px 4px #15272316; }
 .project-count { font-size: .8rem; color: var(--muted); flex-shrink: 0; }
 .project-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.project-grid-four { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .project-card { border: 1px solid var(--line); border-radius: 6px; overflow: hidden; display: flex; flex-direction: column; background: white; transition: border-color 150ms ease, box-shadow 150ms ease; }
 .project-card:hover { border-color: #93b7ac; box-shadow: 0 5px 20px #1527230a; }
 .project-visual { background: #edf2ef; border-bottom: 1px solid var(--line); aspect-ratio: 16 / 10; overflow: hidden; }
