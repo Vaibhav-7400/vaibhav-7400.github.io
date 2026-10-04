@@ -1,0 +1,50 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A machine learning workflow and interactive dashboard for classifying wafer defects from process and inspection data.">
+<meta name="theme-color" content="#096b5e"><meta property="og:type" content="website">
+<meta property="og:title" content="Semiconductor Defect Analysis | Vaibhav Naik">
+<meta property="og:description" content="A machine learning workflow and interactive dashboard for classifying wafer defects from process and inspection data.">
+<meta property="og:url" content="https://vaibhav-7400.github.io/projects/semiconductor-defect-analysis.html">
+<meta property="og:image" content="https://vaibhav-7400.github.io/assets/process-dashboard.png">
+<meta property="og:image:alt" content="Illustrative wafer process-analysis visualization">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://vaibhav-7400.github.io/projects/semiconductor-defect-analysis.html">
+<link rel="icon" type="image/png" href="../assets/process-dashboard.png">
+<link rel="stylesheet" href="../styles.css">
+<title>Semiconductor Defect Analysis | Vaibhav Naik</title>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Semiconductor Defect Analysis | Vaibhav Naik","url":"https://vaibhav-7400.github.io/projects/semiconductor-defect-analysis.html","description":"A machine learning workflow and interactive dashboard for classifying wafer defects from process and inspection data."}</script>
+
+<script src="../script.js" defer></script>
+</head><body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><nav class="nav container" aria-label="Primary navigation">
+<a class="brand" href="../index.html" aria-label="Vaibhav Naik home"><span class="brand-mark" aria-hidden="true">VN</span><span>Vaibhav Naik</span></a>
+<button class="nav-toggle" type="button" aria-label="Open navigation" aria-controls="site-menu" aria-expanded="false" data-nav-toggle><span></span><span></span><span></span></button>
+<div class="nav-links" id="site-menu" data-nav-menu>
+<a href="../index.html#projects">Projects</a>
+<a href="../index.html#experience">Experience</a>
+<a href="../index.html#lab">Semiconductor</a>
+<a href="../index.html#skills">Skills</a>
+<a href="../index.html#contact">Contact</a>
+
+</div></nav></header>
+<main id="main">
+<section class="case-hero accent-teal" aria-labelledby="case-title"><div class="container">
+<nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Home</a><span aria-hidden="true">/</span><a href="../index.html#projects">Projects</a><span aria-hidden="true">/</span><span>Case study</span></nav>
+<p class="eyebrow">Semiconductor / Machine learning</p><h1 id="case-title">Semiconductor Defect Analysis</h1><p class="case-lede">A machine learning workflow and interactive dashboard for classifying wafer defects from process and inspection data.</p>
+<div class="case-meta"><span class="case-status">Working prototype</span><div class="tags"><span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">Streamlit</span></div></div></div></section>
+<div class="container case-grid"><article class="case-content" aria-label="Project case study">
+<figure><img src="../assets/process-dashboard.png" alt="Illustrative wafer map and process-analysis concepts" decoding="async"><figcaption>Illustrative process visualization; not a measured wafer map.</figcaption></figure>
+<section aria-labelledby="problem-title"><h2 id="problem-title">The engineering problem</h2><p>Early defect detection can help engineers investigate process excursions and protect wafer yield. This project examines whether process and inspection measurements can distinguish normal wafers from scratches, particles, edge-ring issues, and contamination.</p></section>
+<section aria-labelledby="approach-title"><h2 id="approach-title">The approach</h2><ol class="method-list"><li><h3>Prepare wafer features</h3><p>Combine numeric process measurements and categorical wafer information in a reproducible preprocessing pipeline.</p></li><li><h3>Train a baseline classifier</h3><p>Use a Random Forest model to classify defect types from the included synthetic sample dataset.</p></li><li><h3>Evaluate beyond accuracy</h3><p>Review holdout precision, recall, macro F1, a confusion matrix, and stratified cross-validation to understand class-specific performance.</p></li><li><h3>Make the analysis accessible</h3><p>Use a Streamlit dashboard to inspect the data, train the model, review feature importance, and explore single-wafer predictions.</p></li></ol></section>
+<section aria-labelledby="outcome-title"><h2 id="outcome-title">What the project delivers</h2><p>The repository contains the preprocessing, training, evaluation, and prediction workflow, along with a deployed dashboard. Performance metrics are generated when the model is trained; no production yield improvement is claimed.</p></section>
+<section aria-labelledby="context-title"><h2 id="context-title">Data &amp; interpretation</h2><p>The included wafer data is synthetic. Feature importance is a model diagnostic and does not establish process causation. Production use would require real inspection data, validation across lots, and drift monitoring.</p></section>
+<section aria-labelledby="next-title"><h2 id="next-title">The next engineering step</h2><p>Validate on real process data, compare model tuning strategies, and connect defect predictions to a wafer-yield investigation.</p></section>
+<div class="next-project"><a class="text-link" href="../index.html#projects">&larr; All projects</a><a class="text-link" href="mailto:vaibhavnaik7400@gmail.com?subject=Discuss%3A%20Semiconductor%20Defect%20Analysis">Discuss this project &rarr;</a></div></article>
+<aside class="case-aside" aria-labelledby="project-links-title"><h2 id="project-links-title">Project resources</h2>
+<a class="button button-primary" href="https://semiconductor-defect-analysis-m9ojmtnsjbyietv9sae4z8.streamlit.app/" target="_blank" rel="noopener noreferrer">Open live dashboard &nearr;</a>
+<a class="button button-outline" href="https://github.com/Vaibhav-7400/semiconductor-defect-analysis" target="_blank" rel="noopener noreferrer">View repository &nearr;</a>
+
+<p class="evidence"><strong>Evidence status</strong>Synthetic sample data; implemented training and evaluation pipeline.</p><p>By Vaibhav Naik</p></aside></div></main>
+<footer class="site-footer"><div class="container footer-grid"><p>&copy; <span data-year>2026</span> Vaibhav Naik. Engineering portfolio.</p><a class="text-link" href="../index.html#contact">Get in touch &rarr;</a></div></footer>
+</body></html>

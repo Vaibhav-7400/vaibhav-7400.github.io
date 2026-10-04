@@ -1,0 +1,213 @@
+{
+  "name": "Vaibhav Naik",
+  "initials": "VN",
+  "email": "vaibhavnaik7400@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/vaibhav4700",
+  "github": "https://github.com/Vaibhav-7400",
+  "siteUrl": "https://vaibhav-7400.github.io",
+  "resumeFile": "resume.pdf",
+  "headline": "Industrial & Systems Engineering",
+  "summary": "I use process analysis, statistics, and production data to build more reliable manufacturing and operations systems. My focus is process quality, continuous improvement, and semiconductor manufacturing.",
+  "experience": [
+    { "company": "Yash Engineering Consultants", "sector": "Engineering consulting", "role": "", "dates": "", "bullets": [] },
+    { "company": "Karan Manufacturing", "sector": "Manufacturing", "role": "", "dates": "", "bullets": [] },
+    { "company": "Jeevandeep Edumedia", "sector": "Publishing & education", "role": "", "dates": "", "bullets": [] },
+    { "company": "Captain Fresh", "sector": "Supply chain & operations", "role": "", "dates": "", "bullets": [] }
+  ],
+  "skills": [
+    { "title": "Process & quality", "items": ["SPC", "Process capability", "DMAIC", "Root-cause analysis", "FMEA", "DOE"] },
+    { "title": "Manufacturing systems", "items": ["Line balancing", "Capacity planning", "Production scheduling", "WIP & cycle time", "OEE", "Lean methods"] },
+    { "title": "Data & analytics", "items": ["Python", "SQL", "pandas", "scikit-learn", "Power BI / Tableau", "Minitab"] },
+    { "title": "Engineering tools", "items": ["Excel", "SAP", "AutoCAD", "Process mapping", "Technical documentation", "Git & GitHub"] }
+  ],
+  "projects": [
+    {
+      "slug": "semiconductor-defect-analysis",
+      "title": "Semiconductor Defect Analysis",
+      "category": "semiconductor quality analytics",
+      "discipline": "Semiconductor / Machine learning",
+      "status": "Working prototype",
+      "featured": true,
+      "accent": "teal",
+      "image": "assets/process-dashboard.png",
+      "imageAlt": "Illustrative wafer map and process-analysis concepts",
+      "caption": "Illustrative process visualization; not a measured wafer map.",
+      "summary": "A machine learning workflow and interactive dashboard for classifying wafer defects from process and inspection data.",
+      "tools": ["Python", "scikit-learn", "Streamlit"],
+      "repository": "https://github.com/Vaibhav-7400/semiconductor-defect-analysis",
+      "demo": "https://semiconductor-defect-analysis-m9ojmtnsjbyietv9sae4z8.streamlit.app/",
+      "evidence": "Synthetic sample data; implemented training and evaluation pipeline.",
+      "problem": "Early defect detection can help engineers investigate process excursions and protect wafer yield. This project examines whether process and inspection measurements can distinguish normal wafers from scratches, particles, edge-ring issues, and contamination.",
+      "approach": [
+        { "title": "Prepare wafer features", "body": "Combine numeric process measurements and categorical wafer information in a reproducible preprocessing pipeline." },
+        { "title": "Train a baseline classifier", "body": "Use a Random Forest model to classify defect types from the included synthetic sample dataset." },
+        { "title": "Evaluate beyond accuracy", "body": "Review holdout precision, recall, macro F1, a confusion matrix, and stratified cross-validation to understand class-specific performance." },
+        { "title": "Make the analysis accessible", "body": "Use a Streamlit dashboard to inspect the data, train the model, review feature importance, and explore single-wafer predictions." }
+      ],
+      "outcome": "The repository contains the preprocessing, training, evaluation, and prediction workflow, along with a deployed dashboard. Performance metrics are generated when the model is trained; no production yield improvement is claimed.",
+      "limitations": "The included wafer data is synthetic. Feature importance is a model diagnostic and does not establish process causation. Production use would require real inspection data, validation across lots, and drift monitoring.",
+      "next": "Validate on real process data, compare model tuning strategies, and connect defect predictions to a wafer-yield investigation."
+    },
+    {
+      "slug": "spc-process-capability",
+      "title": "SPC & Process Capability Dashboard",
+      "category": "quality analytics",
+      "discipline": "Quality / Statistical process control",
+      "status": "Working dashboard",
+      "featured": true,
+      "accent": "rust",
+      "image": "assets/spc-dashboard.png",
+      "imageAlt": "Actual project screenshot showing statistical process control charts",
+      "caption": "SPC dashboard screenshot from the project repository.",
+      "summary": "A manufacturing test-bench analysis that brings control charts, capability, Pareto analysis, and FMEA into one dashboard.",
+      "tools": ["Python", "SPC", "DMAIC", "Streamlit"],
+      "repository": "https://github.com/Vaibhav-7400/SPC_SixSigma_Project",
+      "demo": "https://spcsixsigmaproject-vnbkmdzuuefay8gsowmfky.streamlit.app/",
+      "evidence": "Public automotive manufacturing data; Define, Measure, and Analyze phases.",
+      "problem": "Test-bench cycle time can become a production constraint and a quality signal. This portfolio study uses the public Mercedes-Benz Greener Manufacturing dataset to investigate stability, variation, and configuration-level differences.",
+      "approach": [
+        { "title": "Define the quality characteristic", "body": "Treat test-bench duration as a critical-to-quality variable and make the study's specification window and target explicit." },
+        { "title": "Check stability", "body": "Compare I-MR, subgroup, EWMA, and CUSUM views with Western Electric and Nelson run-rule detection." },
+        { "title": "Study capability and distribution", "body": "Review capability indicators alongside the measured distribution. The repository identifies non-normality, so normal-model capability estimates need careful interpretation." },
+        { "title": "Prioritize investigation", "body": "Use configuration-level Pareto analysis, a structured fishbone, and FMEA to focus follow-up engineering work." }
+      ],
+      "outcome": "The dashboard makes process excursions and configuration differences visible and documents the Define, Measure, and Analyze phases of DMAIC. Improvement pilots and sustained control validation remain future work.",
+      "limitations": "This is an independent study of a public competition dataset, not work performed for Mercedes-Benz. The specification window is an analytical assumption. Proposed corrective actions have not been validated in a production pilot.",
+      "next": "Design a focused experiment, validate proposed countermeasures, and document an operational control plan."
+    },
+    {
+      "slug": "inventory-optimization",
+      "title": "Inventory Policy & Cost Optimization",
+      "category": "operations analytics",
+      "discipline": "Operations / Inventory systems",
+      "status": "Working dashboard",
+      "featured": true,
+      "accent": "gold",
+      "image": "assets/inventory-dashboard.png",
+      "imageAlt": "Actual inventory optimization dashboard with SKU analysis",
+      "caption": "Inventory dashboard screenshot from the project repository.",
+      "summary": "An EOQ and safety-stock model that translates retail transactions into SKU-level ordering policies and service-level tradeoffs.",
+      "tools": ["Python", "EOQ", "ABC analysis", "Streamlit"],
+      "repository": "https://github.com/Vaibhav-7400/Inventory-Optimization",
+      "demo": "https://inventory-optimization-j5bna8pshz6muquejuxd9a.streamlit.app/",
+      "evidence": "Public transactions; modeled policies and projected cost comparisons.",
+      "problem": "Inventory decisions must balance availability, ordering cost, and capital tied up in stock. This project uses public Online Retail transactions to develop reorder policies and identify high-value SKUs.",
+      "approach": [
+        { "title": "Clean transaction history", "body": "Remove cancellations, duplicates, non-positive quantities and prices, and non-product codes before modeling demand." },
+        { "title": "Calculate ordering policies", "body": "Estimate SKU-level demand, economic order quantity, safety stock, and reorder points under explicit cost and lead-time assumptions." },
+        { "title": "Segment the portfolio", "body": "Apply ABC classification to prioritize inventory attention using annual revenue contribution." },
+        { "title": "Compare cost and service", "body": "Compare the policy with a monthly-ordering baseline and examine how service level and lead time change inventory requirements." }
+      ],
+      "outcome": "The repository documents policies for 3,659 SKUs from 391,150 modeled transactions, with an interactive dashboard and cost-sensitivity views. Savings are model projections against a defined baseline, not realized business savings.",
+      "limitations": "Ordering cost, holding cost, lead time, and service targets are assumptions because the transaction dataset does not contain those fields. The proposed policy needs operational validation.",
+      "next": "Validate lead-time and demand assumptions, add supplier constraints, and backtest stockout performance."
+    },
+    {
+      "slug": "wafer-yield-optimization",
+      "title": "Semiconductor Wafer Yield & Process Optimization",
+      "category": "semiconductor quality analytics",
+      "discipline": "Semiconductor / Process engineering",
+      "status": "Planned study",
+      "featured": false,
+      "accent": "teal",
+      "summary": "Investigate yield loss by tool and chamber, assess stability, and evaluate a more reliable operating window.",
+      "tools": ["SPC", "DOE", "Python"],
+      "evidence": "Project scope defined; no measured results published yet.",
+      "problem": "A proposed wafer-process study will examine whether tool, chamber, and recipe differences explain a decline in yield.",
+      "approach": [
+        { "title": "Establish the baseline", "body": "Define wafer-level yield and defect measures, capture lot and tool identifiers, and distinguish real data from synthetic examples." },
+        { "title": "Investigate variation", "body": "Review trends, defect Pareto, tool/chamber comparisons, control charts, and capability under appropriate distribution assumptions." },
+        { "title": "Test the process window", "body": "Use a designed experiment to evaluate parameter interactions and validate a proposed recipe against an independent baseline." }
+      ],
+      "outcome": "This page defines a future case study. Analysis artifacts, measured results, and a repository will be linked when available.",
+      "limitations": "No yield gains, capability improvements, or completed DOE results are claimed.",
+      "next": "Create a reproducible wafer-level dataset and document the initial yield baseline."
+    },
+    {
+      "slug": "fab-scheduling-wip",
+      "title": "Fab Scheduling & WIP Optimization",
+      "category": "semiconductor operations analytics",
+      "discipline": "Semiconductor / Factory operations",
+      "status": "Planned study",
+      "featured": false,
+      "accent": "gold",
+      "summary": "Compare dispatching rules, queue behavior, and bottleneck utilization in a simulated wafer-fab flow.",
+      "tools": ["Simulation", "Scheduling", "Python"],
+      "repository": "https://github.com/Vaibhav-7400/Production-scheduling-automation",
+      "repositoryLabel": "Related project outline",
+      "evidence": "Scheduling concept repository; fab simulation not implemented yet.",
+      "problem": "Re-entrant routes, variable tool availability, and priority lots make fab scheduling a tradeoff between throughput, cycle time, and due-date performance.",
+      "approach": [
+        { "title": "Define the system", "body": "Describe routes, lot sizes, tool capacity, setups, and assumptions about downtime." },
+        { "title": "Compare policies", "body": "Evaluate FIFO, shortest processing time, earliest due date, and bottleneck-aware rules under equivalent simulation conditions." },
+        { "title": "Measure the tradeoffs", "body": "Compare WIP, queue time, cycle time, utilization, and on-time completion across repeated simulation runs." }
+      ],
+      "outcome": "The related repository currently describes a production-scheduling concept. No implemented fab simulation or validated lead-time reduction is presented.",
+      "limitations": "Expected improvements in the outline are targets rather than measured outcomes.",
+      "next": "Build a reproducible baseline model and add a scheduling comparison."
+    },
+    {
+      "slug": "dmaic-defect-reduction",
+      "title": "Manufacturing DMAIC Defect Reduction",
+      "category": "quality operations",
+      "discipline": "Manufacturing / Continuous improvement",
+      "status": "Planned study",
+      "featured": false,
+      "accent": "rust",
+      "summary": "Extend a quality investigation through a validated improvement pilot and sustained control plan.",
+      "tools": ["DMAIC", "Root-cause analysis", "SPC"],
+      "evidence": "Proposed improvement study; pilot and control validation pending.",
+      "problem": "A repeat manufacturing defect requires a measurable quality characteristic, a reliable baseline, and evidence that a corrective action addresses its cause.",
+      "approach": [
+        { "title": "Define and measure", "body": "Set the CTQ, scope, sampling plan, measurement-system checks, and baseline defect rate." },
+        { "title": "Analyze and improve", "body": "Prioritize defect modes with Pareto analysis, investigate causes, and test a focused corrective action." },
+        { "title": "Sustain control", "body": "Document an owner, monitoring frequency, reaction plan, and independent validation period." }
+      ],
+      "outcome": "This study is planned. A future report will distinguish baseline performance, pilot effects, and sustained results.",
+      "limitations": "The existing SPC project provides analytical groundwork but does not establish a completed defect-reduction pilot.",
+      "next": "Choose a specific defect and establish a measurement plan."
+    },
+    {
+      "slug": "line-balancing-capacity",
+      "title": "Production Line Balancing & Capacity Optimization",
+      "category": "operations analytics",
+      "discipline": "Industrial engineering / Capacity",
+      "status": "Planned study",
+      "featured": false,
+      "accent": "gold",
+      "summary": "Study station workloads, compare cycle time with takt, and evaluate work allocation and capacity.",
+      "tools": ["Time study", "Takt time", "Line balancing"],
+      "evidence": "Project scope defined; station measurements pending.",
+      "problem": "Uneven workloads can constrain a line even when total labor capacity appears adequate. This study will identify the limiting station and assess alternative allocations.",
+      "approach": [
+        { "title": "Measure the current state", "body": "Collect station times, demand, available production time, task precedence, and staffing constraints." },
+        { "title": "Identify the constraint", "body": "Compare cycle times with takt and calculate baseline capacity and balance delay." },
+        { "title": "Evaluate a future state", "body": "Assess task reallocation and staffing alternatives while preserving task precedence and required quality checks." }
+      ],
+      "outcome": "A future analysis will include a line-balance chart, proposed allocation, and validated capacity comparison.",
+      "limitations": "No throughput, labor savings, or return-on-investment improvement is claimed before measurement.",
+      "next": "Collect a representative station-level time study."
+    },
+    {
+      "slug": "manufacturing-kpi-dashboard",
+      "title": "Manufacturing KPI & Quality Intelligence Dashboard",
+      "category": "analytics quality operations",
+      "discipline": "Manufacturing / Decision support",
+      "status": "Planned study",
+      "featured": false,
+      "accent": "teal",
+      "summary": "Connect production, defect, and downtime data into a practical view of manufacturing performance.",
+      "tools": ["SQL", "Power BI", "Data modeling"],
+      "evidence": "Dashboard scope defined; manufacturing data model pending.",
+      "problem": "Separate production and quality reports make it difficult to see whether a performance issue comes from availability, operating speed, or defects.",
+      "approach": [
+        { "title": "Define the data model", "body": "Connect production, quality, and equipment facts with consistent lot, machine, product, shift, and date keys." },
+        { "title": "Make measures consistent", "body": "Specify denominators and time windows for first-pass yield, scrap, throughput, downtime, and OEE." },
+        { "title": "Support decisions", "body": "Create production and quality drilldowns, trends, and a documented approach to investigating exceptions." }
+      ],
+      "outcome": "This planned project will produce a manufacturing data model, documented KPI definitions, and interactive reporting views.",
+      "limitations": "The dashboard has not yet been implemented. Example KPI values will be labeled as sample data.",
+      "next": "Create production, quality, and equipment tables and validate the KPI definitions."
+    }
+  ]
+}
